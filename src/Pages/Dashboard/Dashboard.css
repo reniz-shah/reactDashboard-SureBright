@@ -1,0 +1,23 @@
+.Splitter {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100% !important;
+    width: auto !important;
+}
+
+.Button {
+    background-color: #67389B;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.Form {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.no-margin {
+    margin: 0;
+}
