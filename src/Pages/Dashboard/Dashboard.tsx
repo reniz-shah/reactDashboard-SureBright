@@ -24,7 +24,7 @@ const Dashboard: React.FC = () => {
                 className='Splitter'
                 layout={isVertical ? 'vertical' : 'horizontal'}
             >
-                <Splitter.Panel defaultSize="30%" min="20%" max="70%">
+                <Splitter.Panel defaultSize="40%" min="20%" max="70%">
                     <PropertiesTab elementDetails={elementDetails} />
                 </Splitter.Panel>
                 <Splitter.Panel style={{ position: 'relative', overflow: 'hidden' }}>

@@ -84,8 +84,11 @@ async def fetchUrlResources(client, url):
         }
         return JSONResponse(status_code=500, content=response)
 
+
 @app.get("/fetchUrl")
 async def fetchUrl(url: str):
+    if not url.startswith("http"):
+        url = f"https://{url}"
     if not is_valid_url(url):
         response = {
             "message": "Please enter valid url",
